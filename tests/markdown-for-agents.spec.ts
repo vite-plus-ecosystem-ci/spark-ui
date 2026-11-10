@@ -16,7 +16,7 @@ let port: number;
 beforeAll(async () => {
   const plugin = markdownForAgentsPlugin();
   const configure = plugin.configureServer;
-  if (typeof configure !== "function") throw new Error("Missing development middleware");
+  if (typeof configure !== "function") throw new TypeError("Missing development middleware");
   await configure.call(
     {} as ThisParameterType<typeof configure>,
     {
