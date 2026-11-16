@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from "node:url";
 import autoprefixer from "autoprefixer";
 import tailwindcss from "tailwindcss";
 import UnoCSS from "unocss/vite";
-import { defineConfig, loadEnv } from "vite";
+import { defineConfig, loadEnv } from "vite-plus";
 import { postcssIsolateStyles } from "vitepress";
 
 export default ({ mode }: { mode: string }) => {
