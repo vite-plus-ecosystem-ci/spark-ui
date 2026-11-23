@@ -126,3 +126,4 @@ docs/.vitepress/cache
 
 # Local skills lockfile — not tracked
 skills-lock.json
+.vitest/
